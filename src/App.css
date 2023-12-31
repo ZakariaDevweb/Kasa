@@ -113,7 +113,8 @@ nav ul a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin: 0 7%;
+
 }
 
 .about-section {
@@ -123,7 +124,7 @@ nav ul a {
 .about-section-header {
   background-color: #ff6060;
   border-radius: 5px;
-  color: white;
+  color:#fff;
   border: none;
   height: 52px;
   width: 100%;
@@ -138,11 +139,15 @@ nav ul a {
 
 .about-section-header h2 {
   font-size: 24px;
+  position: relative;
+  z-index: 999;
 }
 
 .about-section-content {
-  padding: 15px;
+  
   margin: 0;
+ 
+ border-radius: 5px;
 }
 
 .hero2 {
@@ -154,6 +159,7 @@ nav ul a {
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 223px;
+  margin-bottom: 40px;
 }
 
 .hero-text h1 {
@@ -341,3 +347,4 @@ nav ul a {
     margin-top: 0;
   }
 }
+

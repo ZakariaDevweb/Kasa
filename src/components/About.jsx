@@ -17,8 +17,13 @@ function About({ ad = {
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isFlexibiliteVisible ? 1 : 0,
-      height: isFlexibiliteVisible ? 'auto' : '0px',
-      transform: isFlexibiliteVisible ? 'translateY(0)' : 'translateY(-100px)'
+      maxHeight: isFlexibiliteVisible ? '1000px' : '0px', 
+      visibility: isFlexibiliteVisible ? 'visible' : 'hidden',
+      overflow: isFlexibiliteVisible ? 'visible' : 'hidden',
+      transform: isFlexibiliteVisible ? 'translateY(0)' : 'translateY(-100px)', 
+      background:'#f6f6f6',
+      padding: '15px',
+      borderRadius: "5px"
     },
   });
 
@@ -26,8 +31,13 @@ function About({ ad = {
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isRespectVisible ? 1 : 0,
-      height: isRespectVisible ? 'auto' : '0px',
-      transform: isRespectVisible ? 'translateY(0)' : 'translateY(-100px)'
+      maxHeight: isRespectVisible ? '1000px' : '0px', 
+      visibility: isRespectVisible ? 'visible' : 'hidden',
+      overflow: isRespectVisible ? 'visible' : 'hidden',
+      transform: isRespectVisible ? 'translateY(0)' : 'translateY(-100px)',
+      background:'#f6f6f6',
+      padding: '15px',
+      borderRadius: "5px"
     },
   });
 
@@ -35,8 +45,13 @@ function About({ ad = {
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isServiceVisible ? 1 : 0,
-      height: isServiceVisible ? 'auto' : '0px',
-      transform: isServiceVisible ? 'translateY(0)' : 'translateY(-100px)'
+      maxHeight: isServiceVisible ? '1000px' : '0px', 
+      visibility: isServiceVisible ? 'visible' : 'hidden',
+      overflow: isServiceVisible ? 'visible' : 'hidden',
+      transform: isServiceVisible ? 'translateY(0)' : 'translateY(-100px)',
+      background:'#f6f6f6',
+      padding: '15px',
+      borderRadius: "5px"
     },
   });
 
@@ -44,8 +59,13 @@ function About({ ad = {
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isSecuriteVisible ? 1 : 0,
-      height: isSecuriteVisible ? 'auto' : '0px',
-      transform: isSecuriteVisible ? 'translateY(0)' : 'translateY(-100px)'
+      maxHeight: isSecuriteVisible ? '1000px' : '0px', 
+      visibility: isSecuriteVisible ? 'visible' : 'hidden',
+      overflow: isSecuriteVisible ? 'visible' : 'hidden',
+      transform: isSecuriteVisible ? 'translateY(0)' : 'translateY(-100px)',
+      background:'#f6f6f6',
+      padding: '15px',
+      borderRadius: "5px"
     },
   });
 
