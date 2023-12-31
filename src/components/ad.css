@@ -18,6 +18,7 @@
     height: 415px;
     border-radius: 20px;
     margin: auto;
+    object-fit: cover;
   }
   
   .slider-counter {
@@ -274,4 +275,5 @@
       font-size: 1.5em;
     }
   }
+  
   
