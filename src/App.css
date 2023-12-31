@@ -1,28 +1,24 @@
 :root {
   font-family: Montserrat;
-  color: #FF6060;
+  color: #ff6060;
 }
 
 a {
-  font-weight: 500;
-  text-decoration: inherit;
-  text-align: center;
-}
-a:hover {
-  color: #ff0000;
+  position: relative;
 }
 
+a:hover {
+}
 
 body {
-  width: Hug (1,440px);
-  height: Hug (1,517px);
+  width: Hug (1, 440px);
+  height: Hug (1, 517px);
   top: -743px;
   left: -543px;
   padding: 45px, 0px, 0px, 0px;
   gap: 50px;
   margin: auto;
 }
-
 
 .header {
   display: flex;
@@ -38,7 +34,6 @@ body {
 .header img {
   width: 210.32px;
   height: 68px;
-
 }
 
 .footer {
@@ -53,7 +48,7 @@ body {
   margin-top: 40px;
 }
 
-.footer img{
+.footer img {
   width: 122px;
   height: 39.44px;
   margin-bottom: 50px;
@@ -63,9 +58,8 @@ body {
   font-size: 24px;
 }
 
-
 nav {
-  align-items:center;
+  align-items: center;
   justify-content: center;
   text-align: center;
   display: flex;
@@ -82,7 +76,7 @@ nav {
   overflow: hidden;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -100,18 +94,18 @@ nav ul a {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)), url('src/assets/main.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)),
+    url("src/assets/main.png");
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-weight: 500; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 223px;
   align-items: center;
   display: flex;
   justify-content: center;
-
 }
 
 .about-container {
@@ -127,7 +121,7 @@ nav ul a {
 }
 
 .about-section-header {
-  background-color: #FF6060; 
+  background-color: #ff6060;
   border-radius: 5px;
   color: white;
   border: none;
@@ -142,9 +136,8 @@ nav ul a {
   align-items: center;
 }
 
-.about-section-header h2{
+.about-section-header h2 {
   font-size: 24px;
-  
 }
 
 .about-section-content {
@@ -153,18 +146,19 @@ nav ul a {
 }
 
 .hero2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)), url('src/assets/about.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)),
+    url("src/assets/about.png");
   background-size: cover;
   background-position: center;
-  font-weight: 400; 
-  border-radius: 20px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-weight: 400;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 223px;
 }
 
-.hero-text h1{
+.hero-text h1 {
   color: rgb(255, 255, 255);
-  font-weight: 500; 
+  font-weight: 500;
   font-size: 60px;
 }
 
@@ -173,17 +167,14 @@ nav ul a {
   margin-top: 100px;
 }
 
-
 .errorpage h1 {
   font-size: 25px;
 }
 
 .errorpage a {
-  color: #FF6060;
+  color: #ff6060;
   text-decoration: underline;
 }
-
-
 
 @media (max-width: 650px) {
   ._Body {
@@ -200,7 +191,7 @@ nav ul a {
   }
 
   .errorpage a {
-    color: #FF6060;
+    color: #ff6060;
     text-decoration: underline;
   }
 
@@ -208,7 +199,6 @@ nav ul a {
     margin: 0;
     overflow-x: hidden;
     margin: 0;
-  
   }
 
   .header {
@@ -216,7 +206,7 @@ nav ul a {
     margin-bottom: 15px;
   }
 
-  .header img{
+  .header img {
     width: 145px;
     height: 46px;
     margin: auto;
@@ -225,7 +215,6 @@ nav ul a {
   .header a {
     font-size: 12px;
     margin: 5px;
-
   }
   .footer {
     width: 100%;
@@ -234,7 +223,7 @@ nav ul a {
     margin-top: 20px;
   }
 
-  .footer p{
+  .footer p {
     font-size: 12px;
   }
 
@@ -298,7 +287,6 @@ nav ul a {
 
   .div-left {
     width: 100%;
-
   }
 
   .first-contain {
@@ -311,7 +299,7 @@ nav ul a {
     font-size: 12px;
   }
 
-  .admain{
+  .admain {
     display: flex;
     flex-direction: column;
   }
@@ -342,7 +330,7 @@ nav ul a {
   .slick-prev {
     left: 20px;
   }
-  
+
   .slick-next {
     right: 20px;
   }
@@ -352,6 +340,4 @@ nav ul a {
     width: 84px;
     margin-top: 0;
   }
-  
 }
-
