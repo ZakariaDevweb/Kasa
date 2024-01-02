@@ -14,6 +14,7 @@ function About({ ad = {
   const [isSecuriteVisible, setSecuriteVisible] = useState(false);
 
   const flexibiliteStyle = useSpring({
+    config: { duration: 0 }, // Add this line
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isFlexibiliteVisible ? 1 : 0,
@@ -23,11 +24,12 @@ function About({ ad = {
       transform: isFlexibiliteVisible ? 'translateY(0)' : 'translateY(-100px)', 
       background:'#f6f6f6',
       padding: '15px',
-      borderRadius: "5px"
+      borderRadius: "5px",
+      margin: "0px"
     },
   });
-
   const respectStyle = useSpring({
+    config: { duration: 0 },
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isRespectVisible ? 1 : 0,
@@ -37,11 +39,13 @@ function About({ ad = {
       transform: isRespectVisible ? 'translateY(0)' : 'translateY(-100px)',
       background:'#f6f6f6',
       padding: '15px',
-      borderRadius: "5px"
+      borderRadius: "5px",
+      margin: "0px"
     },
   });
-
+  
   const serviceStyle = useSpring({
+    config: { duration: 0 },
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isServiceVisible ? 1 : 0,
@@ -51,11 +55,13 @@ function About({ ad = {
       transform: isServiceVisible ? 'translateY(0)' : 'translateY(-100px)',
       background:'#f6f6f6',
       padding: '15px',
-      borderRadius: "5px"
+      borderRadius: "5px",
+      margin: "0px"
     },
   });
-
+  
   const securiteStyle = useSpring({
+    config: { duration: 0 },
     from: { opacity: 0, transform: 'translateY(-100px)' },
     to: {
       opacity: isSecuriteVisible ? 1 : 0,
@@ -65,7 +71,8 @@ function About({ ad = {
       transform: isSecuriteVisible ? 'translateY(0)' : 'translateY(-100px)',
       background:'#f6f6f6',
       padding: '15px',
-      borderRadius: "5px"
+      borderRadius: "5px",
+      margin: "0px"
     },
   });
 
