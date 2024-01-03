@@ -91,7 +91,14 @@ nav ul a {
   background: none;
   color: #ff4b4b;
   margin: 0 20px;
+  text-decoration: none; /* Remove underline by default */
+  position: relative;
 }
+
+nav ul a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)),

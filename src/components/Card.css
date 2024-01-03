@@ -6,8 +6,10 @@
   gap: 40px;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  margin-top: 40px; /* Ajout de marge en haut */
   padding: 30px;
 }
+
 
 .card {
   border-radius: 8px;
