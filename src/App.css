@@ -274,9 +274,22 @@ nav ul a:hover {
     margin: 0;
   }
 
-  .ad-section-header {
+  .wrapper-50 {
+    width: 50%;
+    margin: 0 auto; /* This centers the wrapper horizontally */
+}
+
+.ad-section-header {
     width: 100%;
-  }
+}
+
+/* Apply the wrapper to the .ad-section-header */
+.ad-section-header {
+    max-width: 100%; /* Ensure it doesn't overflow the wrapper */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    margin: 0 auto; /* Center the .ad-section-header within the wrapper */
+}
+  
 
   .ad-location {
     width: 100%;
