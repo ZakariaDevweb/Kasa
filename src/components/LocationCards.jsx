@@ -1,6 +1,6 @@
 import React from 'react';
-import '../components/Card.css';
-import LocationsList from '../components/LocationsList.jsx'; 
+import '../styles/Card.css';
+
 
 
 const LocationCards = ({ title, cover }) => {

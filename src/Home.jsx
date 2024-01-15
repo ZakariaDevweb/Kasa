@@ -1,11 +1,9 @@
 import React from 'react';
 import HeroSection from './components/HeroSection.jsx';
 import LocationsList from './components/LocationsList.jsx';
-import LocationCards from './components/LocationCards.jsx';
-import data from './components/data.json';
-import './components/Card.css';
-
-
+import data from './Data/data.json';
+import './styles/Card.css';
+<style />
 
 const Home = () => {
 
@@ -20,3 +18,4 @@ const Home = () => {
 };
 
 export default Home;
+
