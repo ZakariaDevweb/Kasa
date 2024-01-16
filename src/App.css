@@ -7,8 +7,7 @@ a {
   position: relative;
 }
 
-a:hover {
-}
+a:hover {}
 
 body {
   width: Hug (1, 440px);
@@ -91,12 +90,14 @@ nav ul a {
   background: none;
   color: #ff4b4b;
   margin: 0 20px;
-  text-decoration: none; /* Remove underline by default */
+  text-decoration: none;
+  /* Remove underline by default */
   position: relative;
 }
 
 nav ul a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 
@@ -125,13 +126,13 @@ nav ul a:hover {
 }
 
 .about-section {
-  margin-top: 10px;
+
 }
 
 .about-section-header {
   background-color: #ff6060;
   border-radius: 5px;
-  color:#fff;
+  color: #fff;
   border: none;
   height: 52px;
   width: 100%;
@@ -144,6 +145,12 @@ nav ul a:hover {
   align-items: center;
 }
 
+.about-section-content div {
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+}
+
 .about-section-header h2 {
   font-size: 24px;
   position: relative;
@@ -151,10 +158,10 @@ nav ul a:hover {
 }
 
 .about-section-content {
-  
+
   margin: 0;
- 
- border-radius: 5px;
+
+  border-radius: 5px;
 }
 
 .hero2 {
@@ -229,6 +236,7 @@ nav ul a:hover {
     font-size: 12px;
     margin: 5px;
   }
+
   .footer {
     width: 100%;
     height: 209px;
@@ -276,20 +284,24 @@ nav ul a:hover {
 
   .wrapper-50 {
     width: 50%;
-    margin: 0 auto; /* This centers the wrapper horizontally */
-}
+    margin: 0 auto;
+    /* This centers the wrapper horizontally */
+  }
 
-.ad-section-header {
+  .ad-section-header {
     width: 100%;
-}
+  }
 
-/* Apply the wrapper to the .ad-section-header */
-.ad-section-header {
-    max-width: 100%; /* Ensure it doesn't overflow the wrapper */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-    margin: 0 auto; /* Center the .ad-section-header within the wrapper */
-}
-  
+  /* Apply the wrapper to the .ad-section-header */
+  .ad-section-header {
+    max-width: 100%;
+    /* Ensure it doesn't overflow the wrapper */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+    margin: 0 auto;
+    /* Center the .ad-section-header within the wrapper */
+  }
+
 
   .ad-location {
     width: 100%;
@@ -367,4 +379,3 @@ nav ul a:hover {
     margin-top: 0;
   }
 }
-

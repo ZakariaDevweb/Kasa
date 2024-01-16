@@ -12,6 +12,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './styles/ad.css';
 
+import Collapse from './components/Collapse.jsx';
+
 function AdDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -132,26 +134,31 @@ function AdDetails() {
 
       <div className="admain">
         <div className="ad-section description">
-          <button className="ad-section-header" onClick={() => setDescriptionVisible(!isDescriptionVisible)}>
-            Description
-            <img src={arrowSvg} className={`ad-arrow ${isDescriptionVisible ? 'up' : ''}`} alt="arrow" />
-          </button>
-
-          <div className="ad-section-content">
-            <animated.p style={descriptionStyle}>{ad.description}</animated.p>
-          </div>
+          <Collapse
+            items={[
+              {
+                title: 'Description',
+                description: ad.description,
+              },
+            ]}
+            customClass1="ad-section-header"
+            customClass2="ad-section-content"
+          />
         </div>
 
         <div className="ad-section equipment">
-          <button className="ad-section-header" onClick={() => setEquipmentVisible(!isEquipmentVisible)}>
-            Équipements
-            <img src={arrowSvg} className={`ad-arrow ${isEquipmentVisible ? 'up' : ''}`} alt="arrow" />
-          </button>
-          <div className="ad-section-content">
-            <animated.ul style={equipmentStyle}>
-              {ad.equipments.map((equipment, index) => <animated.li key={index} style={equipmentStyle}>{equipment}</animated.li>)}
-            </animated.ul>
-          </div>
+          <Collapse
+            items={[
+              {
+                title: 'Équipements',
+                description: ad.equipments.map((equipments, index) => (
+                  <p key={index}>{equipments}</p>
+                )),
+              },
+            ]}
+            customClass1="ad-section-header"
+            customClass2="ad-section-content"
+          />
         </div>
       </div>
     </div>
