@@ -1,0 +1,25 @@
+.item {
+    margin-bottom: 10px;
+  }
+  
+  .ad-arrow {
+    margin-left: 10px;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .description {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .fade-in {
+    max-height: 500px; /* Set an appropriate value */
+  }
+  
+  .fade-out {
+    max-height: 0;
+  }
+  

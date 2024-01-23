@@ -13,10 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-font-loader": "^1.1.0",
-    "react-router-dom": "^6.21.0",
-    "react-slick": "^0.29.0",
-    "react-spring": "^9.7.3",
-    "slick-carousel": "^1.8.1"
+    "react-router-dom": "^6.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

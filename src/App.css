@@ -163,6 +163,24 @@ nav ul a:hover {
 
   border-radius: 5px;
 }
+.about-section-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.about-section-content.visible {
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-section-header.expanded {
+  /* Add styling for the expanded header if needed */
+}
+
 
 .hero2 {
   background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.5)),

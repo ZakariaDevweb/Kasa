@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import data from './Data/data.json';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
+
 import arrowSvg from './assets/arrow.svg';
 import ArrowLeft from './assets/arrow-left.svg';
 import ArrowRight from './assets/arrow-right.svg';
 import StarFilled from './assets/stars-filled.svg';
 import StarEmpty from './assets/stars-empty.svg';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
+
 import './styles/ad.css';
 
 import Collapse from './components/Collapse.jsx';
@@ -60,25 +59,9 @@ function AdDetails() {
   const [isDescriptionVisible, setDescriptionVisible] = useState(false);
   const [isEquipmentVisible, setEquipmentVisible] = useState(false);
 
-  const descriptionStyle = useSpring({
-    from: { opacity: 0, transform: 'translateY(-100px)' },
-    to: {
-      opacity: isDescriptionVisible ? 1 : 0,
-      height: isDescriptionVisible ? 'auto' : '0px',
-      transform: isDescriptionVisible ? 'translateY(0)' : 'translateY(-100px)'
-    },
-  });
 
   // Animation pour les équipements
-  const equipmentStyle = useSpring({
-    from: { opacity: 1, transform: 'translateY(-100px)' },
-    to: {
-      opacity: isEquipmentVisible ? 1 : 0,
-      height: isEquipmentVisible ? 'auto' : '0px',
-      transform: isEquipmentVisible ? 'translateY(0)' : 'translateY(-100px)'
-    },
-  });
-
+  
 
 
   if (!ad) {
@@ -88,13 +71,7 @@ function AdDetails() {
   return (
     <div className="ad-container">
       <div className="image-slider">
-        <Slider {...settings}>
-          {ad.pictures.map((picture, index) => (
-            <div key={index}>
-              <img src={picture} alt={`Image ${index}`} />
-            </div>
-          ))}
-        </Slider>
+      
         <div className="slider-counter">
           {`${currentSlide + 1}/${ad.pictures.length}`}
         </div>
