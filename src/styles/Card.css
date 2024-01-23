@@ -11,7 +11,9 @@
 }
 
 
+
 .card {
+  position: relative;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -19,9 +21,23 @@
   width: 340px;
   height: 340px;
   margin: 30px;
-}
 
-.card:hover {
+
+}
+.card::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+
+  );
 }
 
 .card-image {
@@ -46,19 +62,9 @@
   position: absolute;
   z-index: 1;
 }
-
 @media (max-width: 650px) {
   .card {
     width: 335px;
-    height: 255px;
     margin: 10px 0;
-  }
-
-  .cards-container {
-    margin-top: 10px;
-  }
-
-  .card-title {
-    font-size: 14px;
   }
 }
