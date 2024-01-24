@@ -106,7 +106,6 @@
   height: 79.2px;
 }
 
-
 .ad-section-content {
   display: flex;
   justify-content: space-between;
@@ -114,7 +113,6 @@
   width: 100%;
 }
 
-.ad-section-content div,
 .ad-section-content li,
 .ad-section-content ul {
   background-color: #f6f6f6;
@@ -132,7 +130,6 @@
   object-fit: cover;
 }
 
-
 .ad-image {
   border-radius: 20px;
   height: 500px;
@@ -149,14 +146,11 @@
   margin-top: 20px;
 }
 
-
-
 .rating-stars {
   display: flex;
   margin-top: 10px;
   justify-content: flex-end;
 }
-
 
 .first-contain {
   display: flex;
@@ -196,7 +190,6 @@
   margin-right: 10px;
   border-radius: 60px
 }
-
 
 .host-name-container {
   display: flex;
@@ -266,10 +259,6 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
-
-
-
-
 
 @media (max-width: 650px) {
   .ad-container {
