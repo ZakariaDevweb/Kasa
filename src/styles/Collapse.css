@@ -1,25 +1,40 @@
 .item {
-    margin-bottom: 10px;
-  }
-  
-  .ad-arrow {
-    margin-left: 10px;
-  }
-  
-  .visible {
-    display: block;
-  }
-  
-  .description {
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-  }
-  
-  .fade-in {
-    max-height: 500px; /* Set an appropriate value */
-  }
-  
-  .fade-out {
-    max-height: 0;
-  }
-  
+  margin-bottom: 10px;
+}
+
+.ad-arrow {
+  margin-left: 10px;
+}
+
+.visible {
+  display: block;
+}
+
+.description {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.fade-in {
+  max-height: 500px; /* Set an appropriate value */
+}
+
+.fade-out {
+  max-height: 0;
+}
+
+.content {
+  max-height: 0 !important;
+  overflow: hidden; 
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  line-height: 25.67px;
+  color: #FF6060;
+}
+
+.content.show {
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  padding: 20px;
+}
+
+

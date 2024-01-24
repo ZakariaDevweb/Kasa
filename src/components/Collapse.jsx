@@ -22,7 +22,7 @@ function Collapse({ items, customClass1, customClass2 }) {
           </button>
 
           <div className={`${customClass2} ${isTextVisible ? 'visible' : ''}`}>
-            <div className={`description ${isTextVisible ? 'fade-in' : 'fade-out'}`}>
+            <div className={`description ${isTextVisible ? "content show" : "content"}`}> 
               {item.description}
             </div>
           </div>
