@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import arrowSvg from '../assets/arrow.svg';
-import '../styles/Collapse.css'; // Import your CSS file for styling
+import '../styles/Collapse.css'; 
 
 function Collapse({ items, customClass1, customClass2 }) {
   const [isTextVisible, setTextVisible] = useState(false);

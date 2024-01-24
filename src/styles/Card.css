@@ -62,13 +62,18 @@
   position: absolute;
   z-index: 1;
 }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 0 20px 40px 20px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 30px 40px;
+}
 @media (max-width: 650px) {
   .card {
     width: 335px;
     margin: 10px 0;
   }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes

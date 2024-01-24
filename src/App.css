@@ -7,14 +7,15 @@ a {
   position: relative;
 }
 
-a:hover {}
+
 
 body {
-  width: Hug (1, 440px);
-  height: Hug (1, 517px);
+margin:0 auto;
+ max-width:1440px;
+ 
   top: -743px;
   left: -543px;
-  padding: 45px, 0px, 0px, 0px;
+  padding: 45px  0px 0px 0px;
   gap: 50px;
   margin: auto;
 }
@@ -125,9 +126,9 @@ nav ul a:hover {
 
 }
 
-.about-section {
 
-}
+
+
 
 .about-section-header {
   background-color: #ff6060;
@@ -177,9 +178,7 @@ nav ul a:hover {
   visibility: visible;
 }
 
-.about-section-header.expanded {
-  /* Add styling for the expanded header if needed */
-}
+
 
 
 .hero2 {
