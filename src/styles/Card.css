@@ -1,17 +1,3 @@
-.cards-container {
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
-  margin-top: 40px; /* Ajout de marge en haut */
-  padding: 30px;
-}
-
-
-
 .card {
   position: relative;
   border-radius: 8px;
@@ -20,11 +6,9 @@
   transition: transform 0.2s;
   width: 340px;
   height: 340px;
-  margin: 30px;
-
-
 }
-.card::after{
+
+.card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -32,12 +16,9 @@
   bottom: 0px;
   right: 0;
   border-radius: 10px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%);
 }
 
 .card-image {
@@ -47,8 +28,9 @@
   width: 340px;
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
 }
-.card:hover{
-  
+
+.card:hover {
+
   transform: scale(1.1);
 }
 
@@ -62,15 +44,35 @@
   position: absolute;
   z-index: 1;
 }
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin: 0 20px 40px 20px;
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  padding: 30px 40px;
+
+@media only screen and (min-width: 600px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 30px 40px;
+  }
 }
+
+@media (max-width: 650px) {
+  .card {
+    width: 335px;
+    margin: 10px 0;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards-container a {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   .card {
     width: 335px;

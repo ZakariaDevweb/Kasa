@@ -1,4 +1,4 @@
-import "./Carrousel.css";
+import "../styles/Carrousel.css";
 import React, { useState } from "react";
 import { ChevronLeft } from "../Icons/ChevronLeft";
 import { ChevronRight } from "../Icons/ChevronRight";

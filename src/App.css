@@ -10,12 +10,12 @@ a {
 
 
 body {
-margin:0 auto;
- max-width:1440px;
- 
+  margin: 0 auto;
+  max-width: 1440px;
+
   top: -743px;
   left: -543px;
-  padding: 45px  0px 0px 0px;
+  padding: 45px 0px 0px 0px;
   gap: 50px;
   margin: auto;
 }
@@ -126,10 +126,6 @@ nav ul a:hover {
 
 }
 
-
-
-
-
 .about-section-header {
   background-color: #ff6060;
   border-radius: 5px;
@@ -164,6 +160,7 @@ nav ul a:hover {
 
   border-radius: 5px;
 }
+
 .about-section-content {
   max-height: 0;
   overflow: hidden;
