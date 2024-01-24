@@ -65,8 +65,8 @@ nav {
   display: flex;
   flex-direction: row;
   margin-top: auto;
-  width: Hug (309px);
-  height: Hug (34px);
+  width: 309px;
+  height: 34px;
 }
 
 ._Body {
@@ -115,6 +115,7 @@ nav ul a:hover {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .about-container {
@@ -279,12 +280,13 @@ nav ul a:hover {
   }
 
   .hero-text h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .hero {
     height: 111px;
     margin-top: 0;
+    margin-bottom: 25px;
   }
 
   .hero2 {
@@ -315,7 +317,7 @@ nav ul a:hover {
     margin: 0 auto;
     /* Center the .ad-section-header within the wrapper */
   }
-  
+
   .ad-location {
     width: 100%;
     height: auto;

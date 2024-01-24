@@ -37,7 +37,7 @@
 .card-title {
   color: #fff;
   font-size: 18px;
-  width: 325px;
+  width: 80%;
   font-weight: 400;
   margin: 15px 10px;
   margin-top: -50px;
@@ -70,12 +70,8 @@
 
   .cards-container a {
     padding: 20px;
-  }
-}
-
-@media (max-width: 650px) {
-  .card {
-    width: 335px;
-    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
