@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import arrowSvg from '../assets/arrow.svg';
-
 import Collapse from './Collapse.jsx';
 
 function About({ ad = {
