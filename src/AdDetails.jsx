@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import data from './Data/data.json';
 import { useParams, useNavigate } from 'react-router-dom';
-import arrowSvg from './assets/arrow.svg';
 import ArrowLeft from './assets/arrow-left.svg';
 import ArrowRight from './assets/arrow-right.svg';
 import StarFilled from './assets/stars-filled.svg';
