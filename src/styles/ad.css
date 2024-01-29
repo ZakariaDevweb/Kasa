@@ -21,18 +21,6 @@
   object-fit: cover;
 }
 
-.slider-counter {
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25.67px;
-  text-align: center;
-}
 
 .slick-prev,
 .slick-next {

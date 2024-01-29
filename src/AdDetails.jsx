@@ -31,6 +31,7 @@ function AdDetails() {
   const [isDescriptionVisible, setDescriptionVisible] = useState(false);
   const [isEquipmentVisible, setEquipmentVisible] = useState(false);
 
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -40,7 +41,7 @@ function AdDetails() {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     autoplaySpeed: 3000,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    beforeChange: setCurrentSlide,
   };
 
   function NextArrow(props) {
@@ -64,10 +65,7 @@ function AdDetails() {
   return (
     <div className="ad-container">
       <div className="image-slider">
-        <Carrousel images={ad.pictures} settings={settings} />
-        <div className="slider-counter">
-          {`${currentSlide + 1}/${ad.pictures.length}`}
-        </div>
+        <Carrousel images={ad.pictures} settings={settings} currentSlide={currentSlide} />
       </div>
       <div className="first-contain">
         <div className="div-left">
