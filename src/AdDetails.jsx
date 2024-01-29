@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import data from './Data/data.json';
 import { useParams, useNavigate } from 'react-router-dom';
-import ArrowLeft from './assets/arrow-left.svg';
-import ArrowRight from './assets/arrow-right.svg';
 import StarFilled from './assets/stars-filled.svg';
 import StarEmpty from './assets/stars-empty.svg';
 import Carrousel from './components/Carrousel.jsx';
@@ -13,9 +11,12 @@ import Collapse from './components/Collapse.jsx';
 
 function AdDetails() {
   const { id } = useParams();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const ad = data.find((ad) => ad.id === id);
+
+  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+  const [isEquipmentVisible, setEquipmentVisible] = useState(false);
 
   useEffect(() => {
     if (!ad) {
@@ -27,45 +28,14 @@ function AdDetails() {
     return null;
   }
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
-  const [isEquipmentVisible, setEquipmentVisible] = useState(false);
-
-
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    autoplaySpeed: 3000,
-    beforeChange: setCurrentSlide,
-  };
-
-  function NextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <img src={ArrowRight} className={className} style={{ ...style, display: "block" }} onClick={onClick} alt="Next" />
-    );
-  }
-
-  function PrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <img src={ArrowLeft} className={className} style={{ ...style, display: "block" }} onClick={onClick} alt="Previous" />
-    );
-  }
-
-  if (!ad) {
-    return <div>Annonce introuvable</div>;
-  }
 
   return (
     <div className="ad-container">
       <div className="image-slider">
-        <Carrousel images={ad.pictures} settings={settings} currentSlide={currentSlide} />
+        <Carrousel images={ad.pictures} />
+        {/* <div className="slider-counter">
+          {`${currentSlide + 1}/${ad.pictures.length}`}
+        </div> */}
       </div>
       <div className="first-contain">
         <div className="div-left">

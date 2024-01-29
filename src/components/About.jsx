@@ -13,7 +13,7 @@ function About({ ad = {
   const [isSecuriteVisible, setSecuriteVisible] = useState(false);
 
   return (
-    <>
+    <div>
       <div className='_Body'>
         <div className="hero2"></div>
         <div className="about-container">
@@ -71,7 +71,7 @@ function About({ ad = {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
