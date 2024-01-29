@@ -1,7 +1,7 @@
 .slideshow {
     position: relative;
     padding-bottom: calc(415 / 1440 * 100vw);
-    /* overflow: hidden; */
+    
     width: 100%;
 }
 
@@ -52,6 +52,63 @@
     width: 100%;
     text-align: center;
 }
+
+/* Styles pour les appareils jusqu'à 599px de largeur */
+@media only screen and (max-width: 599px) {
+    .slideshow {
+        padding-bottom: calc(815 / 1440 * 100vw);
+        min-height: 255px;
+    }
+
+    .slideshow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .nbr {
+        bottom: 0;
+    }
+
+    .arrows {
+        gap: 65%;
+    }
+
+    .arrow svg {
+        width: 38px;
+        height: 48px;
+    }
+}
+
+/* Styles pour les tablettes */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .slideshow {
+        padding-bottom: calc(500 / 1024 * 100%);
+        min-height: 200px;
+    }
+
+    .slideshow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .nbr {
+        bottom: 10px;
+    }
+
+    .arrows {
+        gap: 50px;
+    }
+
+    .arrow svg {
+        width: 28px;
+        height: 36px;
+    }
+}
+
 
 @media only screen and (max-width: 599px) {
     .slideshow {

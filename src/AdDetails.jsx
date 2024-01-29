@@ -13,7 +13,7 @@ import Collapse from './components/Collapse.jsx';
 
 function AdDetails() {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
   const ad = data.find((ad) => ad.id === id);
 
@@ -28,6 +28,8 @@ function AdDetails() {
   }
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
+  const [isEquipmentVisible, setEquipmentVisible] = useState(false);
 
   const settings = {
     infinite: true,
@@ -54,13 +56,6 @@ function AdDetails() {
       <img src={ArrowLeft} className={className} style={{ ...style, display: "block" }} onClick={onClick} alt="Previous" />
     );
   }
-  const [isDescriptionVisible, setDescriptionVisible] = useState(false);
-  const [isEquipmentVisible, setEquipmentVisible] = useState(false);
-
-
-  // Animation pour les équipements
-  
-
 
   if (!ad) {
     return <div>Annonce introuvable</div>;
@@ -69,7 +64,7 @@ function AdDetails() {
   return (
     <div className="ad-container">
       <div className="image-slider">
-      <Carrousel images={ad.pictures} />
+        <Carrousel images={ad.pictures} settings={settings} />
         <div className="slider-counter">
           {`${currentSlide + 1}/${ad.pictures.length}`}
         </div>
@@ -101,7 +96,6 @@ function AdDetails() {
                   <img key={index} src={StarFilled} className="star" alt="filled star" /> :
                   <img key={index} src={StarEmpty} className="star" alt="empty star" />
               ))}
-
             </div>
           </div>
         </div>
@@ -116,6 +110,8 @@ function AdDetails() {
                 description: ad.description,
               },
             ]}
+            isOpen={isDescriptionVisible}
+            toggle={() => setDescriptionVisible(!isDescriptionVisible)}
             customClass1="ad-section-header"
             customClass2="ad-section-content"
           />
@@ -131,14 +127,14 @@ function AdDetails() {
                 )),
               },
             ]}
+            isOpen={isEquipmentVisible}
+            toggle={() => setEquipmentVisible(!isEquipmentVisible)}
             customClass1="ad-section-header"
             customClass2="ad-section-content"
           />
         </div>
       </div>
     </div>
-
-
   );
 }
 
